@@ -157,7 +157,7 @@ button:hover {
     animation-play-state: paused; /* Start with animation paused */
 }
 
-.heart1 { top: 10%; left: 10%; animation-delay: 0s; }
+.heart1 { top: 10%; left: 10%; animation-delay: s; }
 .heart2 { top: 20%; left: 20%; animation-delay: 1s; }
 .heart3 { top: 30%; left: 30%; animation-delay: 2s; }
 .heart4 { top: 40%; left: 40%; animation-delay: 3s; }
@@ -173,15 +173,15 @@ button:hover {
 .heart14 { top: 35%; left: 65%; animation-delay: 13s; }
 .heart15 { top: 65%; left: 35%; animation-delay: 14s; }
 .heart16 { top: 45%; left: 55%; animation-delay: 15s; }
-.heart17 { top: 55%; left: 45%; animation-delay: 16s; }
-.heart18 { top: 10%; left: 90%; animation-delay: 17s; }
-.heart19 { top: 90%; left: 10%; animation-delay: 18s; }
-.heart20 { top: 20%; left: 80%; animation-delay: 19s; }
-.heart21 { top: 80%; left: 20%; animation-delay: 20s; }
-.heart22 { top: 30%; left: 70%; animation-delay: 21s; }
-.heart23 { top: 70%; left: 30%; animation-delay: 22s; }
-.heart24 { top: 40%; left: 60%; animation-delay: 23s; }
-.heart25 { top: 60%; left: 40%; animation-delay: 24s; }
+.heart17 { top: 55%; left: 45%; animation-delay: 15s; }
+.heart18 { top: 10%; left: 90%; animation-delay: 13s; }
+.heart19 { top: 90%; left: 10%; animation-delay: 14s; }
+.heart20 { top: 20%; left: 80%; animation-delay: 12s; }
+.heart21 { top: 80%; left: 20%; animation-delay: 14s; }
+.heart22 { top: 30%; left: 70%; animation-delay: 12s; }
+.heart23 { top: 70%; left: 30%; animation-delay: 13s; }
+.heart24 { top: 40%; left: 60%; animation-delay: 15s; }
+.heart25 { top: 60%; left: 40%; animation-delay: 15s; }
 
 @keyframes float {
     0% {

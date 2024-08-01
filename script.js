@@ -1,9 +1,22 @@
 document.getElementById('bloomButton').addEventListener('click', function() {
     document.querySelector('.flower-container').classList.add('bloom');
-    document.querySelectorAll('.heart').forEach(function(heart) {
-        heart.style.opacity = '0.8';
-        heart.style.animationPlayState = 'running';
+
+    const hearts = Array.from(document.querySelectorAll('.heart'));
+    
+    // Shuffle the hearts array
+    for (let i = hearts.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [hearts[i], hearts[j]] = [hearts[j], hearts[i]];
+    }
+
+    hearts.forEach((heart, index) => {
+        setTimeout(() => {
+            heart.style.display = 'block';
+            heart.style.opacity = '0.8';
+            heart.style.animationPlayState = 'running';
+        }, index * 300); // Adjust the delay (300ms) as needed
     });
+
     document.getElementById('eatQuery').style.display = 'block';
 });
 
