@@ -1,0 +1,210 @@
+body {
+    font-family: 'Pacifico', cursive;
+    background: url('https://img.freepik.com/premium-photo/anime-little-cat-dog-duo-adventure-with-apocalyptic-city-background_916191-154094.jpg?w=1060') no-repeat center center fixed; /* Replace with your background image URL */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 248, 231, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px;
+}
+
+h1 {
+    color: #FFB74D;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+p {
+    color: #FFA726;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #FFB74D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #FFA726;
+}
+
+.flower-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.flower-container.bloom {
+    opacity: 1;
+}
+
+.flower {
+    position: relative;
+    width: 100px;
+    height: 200px;
+}
+
+.petal {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #FFEB3B;
+    border-radius: 50%;
+    transform-origin: center center;
+    animation: bloom 1s forwards;
+}
+
+.petal1 { top: 0; left: 40px; transform: scale(0); }
+.petal2 { top: 15px; left: 60px; transform: scale(0); }
+.petal3 { top: 45px; left: 60px; transform: scale(0); }
+.petal4 { top: 60px; left: 30px; transform: scale(0); }
+.petal5 { top: 45px; left: 0; transform: scale(0); }
+.petal6 { top: 15px; left: 0; transform: scale(0); }
+.petal7 { top: 0; left: 15px; transform: scale(0); }
+.petal8 { top: 15px; left: 45px; transform: scale(0); }
+
+.center {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: #6B4226;
+    border-radius: 50%;
+}
+
+.stem {
+    position: absolute;
+    top: 70px;
+    left: 47px;
+    width: 6px;
+    height: 100px;
+    background-color: #388E3C;
+    transform: scale(0);
+    transform-origin: top;
+    animation: grow 1s forwards;
+}
+
+.grass-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.grass {
+    background-color: #4CAF50;
+    transform-origin: bottom;
+    animation: grow 1s forwards;
+}
+
+.grass1 { height: 50px; width: 5px; transform: scaleY(0) rotate(-10deg); }
+.grass2 { height: 40px; width: 6px; transform: scaleY(0) rotate(5deg); }
+.grass3 { height: 60px; width: 4px; transform: scaleY(0) rotate(-5deg); }
+.grass4 { height: 35px; width: 5px; transform: scaleY(0) rotate(10deg); }
+.grass5 { height: 55px; width: 4px; transform: scaleY(0) rotate(-7deg); }
+.grass6 { height: 45px; width: 6px; transform: scaleY(0) rotate(8deg); }
+.grass7 { height: 38px; width: 5px; transform: scaleY(0) rotate(-8deg); }
+.grass8 { height: 52px; width: 6px; transform: scaleY(0) rotate(7deg); }
+.grass9 { height: 48px; width: 4px; transform: scaleY(0) rotate(-9deg); }
+.grass10 { height: 57px; width: 5px; transform: scaleY(0) rotate(6deg); }
+
+.heart-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: #FF474C;
+    opacity: 0;
+    clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+    animation: float 4s infinite;
+    animation-play-state: paused; /* Start with animation paused */
+}
+
+.heart1 { top: 10%; left: 10%; animation-delay: 0s; }
+.heart2 { top: 20%; left: 20%; animation-delay: 1s; }
+.heart3 { top: 30%; left: 30%; animation-delay: 2s; }
+.heart4 { top: 40%; left: 40%; animation-delay: 3s; }
+.heart5 { top: 50%; left: 50%; animation-delay: 4s; }
+.heart6 { top: 60%; left: 60%; animation-delay: 5s; }
+.heart7 { top: 70%; left: 70%; animation-delay: 6s; }
+.heart8 { top: 80%; left: 80%; animation-delay: 7s; }
+.heart9 { top: 90%; left: 90%; animation-delay: 8s; }
+.heart10 { top: 15%; left: 75%; animation-delay: 9s; }
+.heart11 { top: 85%; left: 25%; animation-delay: 10s; }
+.heart12 { top: 25%; left: 85%; animation-delay: 11s; }
+.heart13 { top: 75%; left: 15%; animation-delay: 12s; }
+.heart14 { top: 35%; left: 65%; animation-delay: 13s; }
+.heart15 { top: 65%; left: 35%; animation-delay: 14s; }
+.heart16 { top: 45%; left: 55%; animation-delay: 15s; }
+.heart17 { top: 55%; left: 45%; animation-delay: 16s; }
+.heart18 { top: 10%; left: 90%; animation-delay: 17s; }
+.heart19 { top: 90%; left: 10%; animation-delay: 18s; }
+.heart20 { top: 20%; left: 80%; animation-delay: 19s; }
+.heart21 { top: 80%; left: 20%; animation-delay: 20s; }
+.heart22 { top: 30%; left: 70%; animation-delay: 21s; }
+.heart23 { top: 70%; left: 30%; animation-delay: 22s; }
+.heart24 { top: 40%; left: 60%; animation-delay: 23s; }
+.heart25 { top: 60%; left: 40%; animation-delay: 24s; }
+
+@keyframes float {
+    0% {
+        transform: translateY(100%);
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes bloom {
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes grow {
+    to {
+        transform: scaleY(1);
+    }
+}
